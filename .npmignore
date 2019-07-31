@@ -1,0 +1,7 @@
+/test
+/.nvmrc
+/.prettierrc
+/tsconfig.json
+/tslint.json
+/wallaby.js
+/yarn.lock

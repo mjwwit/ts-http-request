@@ -1,0 +1,33 @@
+{
+  "name": "@mstack/http-request",
+  "version": "1.0.0",
+  "description": "A HTTP request library for Node.js with no dependencies",
+  "main": "dist/request.js",
+  "types": "dist/request.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run lint",
+    "test": "ts-node -P test/tsconfig.json $(yarn bin)/tape test/**/*.spec.ts | tap-spec"
+  },
+  "author": "Michael de Wit <mjwwit@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjwwit/ts-http-request.git"
+  },
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.0.0",
+    "@types/tape": "^4.2.33",
+    "prettier": "^1.18.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.5.3"
+  }
+}
